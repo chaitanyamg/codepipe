@@ -14,7 +14,7 @@ phases:
     commands:
       - echo Build started on `date`
       - echo Building the Docker image...
-      - docker build -t $REPOSITORY_URI:latest .
+      - docker build -t babu:1 .
       - docker tag $REPOSITORY_URI:latest470727887694.dkr.ecr.us-east-1.amazonaws.com/chaitanya-demo:1.0
   post_build:
     commands:
